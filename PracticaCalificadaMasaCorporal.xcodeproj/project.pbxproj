@@ -13,6 +13,7 @@
 		FB1E4FE22CB42E5300E1ECF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB1E4FE02CB42E5300E1ECF3 /* Main.storyboard */; };
 		FB1E4FE42CB42E5500E1ECF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB1E4FE32CB42E5500E1ECF3 /* Assets.xcassets */; };
 		FB1E4FE72CB42E5500E1ECF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB1E4FE52CB42E5500E1ECF3 /* LaunchScreen.storyboard */; };
+		FB1E4FEF2CB4337F00E1ECF3 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1E4FEE2CB4337E00E1ECF3 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FB1E4FE32CB42E5500E1ECF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB1E4FE62CB42E5500E1ECF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB1E4FE82CB42E5500E1ECF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB1E4FEE2CB4337E00E1ECF3 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				FB1E4FDA2CB42E5300E1ECF3 /* AppDelegate.swift */,
 				FB1E4FDC2CB42E5300E1ECF3 /* SceneDelegate.swift */,
 				FB1E4FDE2CB42E5300E1ECF3 /* ViewController.swift */,
+				FB1E4FEE2CB4337E00E1ECF3 /* ViewController2.swift */,
 				FB1E4FE02CB42E5300E1ECF3 /* Main.storyboard */,
 				FB1E4FE32CB42E5500E1ECF3 /* Assets.xcassets */,
 				FB1E4FE52CB42E5500E1ECF3 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB1E4FDF2CB42E5300E1ECF3 /* ViewController.swift in Sources */,
+				FB1E4FEF2CB4337F00E1ECF3 /* ViewController2.swift in Sources */,
 				FB1E4FDB2CB42E5300E1ECF3 /* AppDelegate.swift in Sources */,
 				FB1E4FDD2CB42E5300E1ECF3 /* SceneDelegate.swift in Sources */,
 			);
