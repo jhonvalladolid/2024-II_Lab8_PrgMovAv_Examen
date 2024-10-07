@@ -19,12 +19,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Establecemos el título en el UILabel txtTitulo
         txtTitulo.text = "Calculo de Indice de Masa Corporal"
         txtTitulo.font = UIFont.boldSystemFont(ofSize: 26)
-        txtTitulo.textAlignment = .center
         
-        // Estilos del botón "Calcular ICM"
         calcularButton.layer.cornerRadius = 10
         calcularButton.backgroundColor = UIColor.systemBlue
         calcularButton.setTitleColor(.white, for: .normal)
@@ -36,18 +33,14 @@ class ViewController: UIViewController {
     @IBAction func calcularICM(_ sender: Any) {
         guard let pesoText = txtPeso.text, let peso = Double(pesoText),
               let alturaText = txtAltura.text, let alturaEnCm = Double(alturaText) else {
-            // Mostramos una alerta si hay algún error en los datos ingresados
             mostrarAlerta()
             return
         }
 
-        // Convertimos la altura de centímetros a metros
         let altura = alturaEnCm / 100.0
 
-        // Fórmula del IMC: peso / (altura * altura)
         imcCalculado = peso / (altura * altura)
         
-        // Realizamos la transición al segundo ViewController
         performSegue(withIdentifier: "mostrarResultado", sender: self)
     }
     

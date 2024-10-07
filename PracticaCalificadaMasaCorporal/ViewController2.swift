@@ -18,19 +18,15 @@ class ViewController2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Establecemos el título en el UILabel txtTitulo
         txtTitulo.text = "Resultado del IMC"
-        txtTitulo.font = UIFont.boldSystemFont(ofSize: 26)  // Opcional: puedes cambiar el estilo de fuente
-        txtTitulo.textAlignment = .center  // Centrar el texto
+        txtTitulo.font = UIFont.boldSystemFont(ofSize: 26)
 
-        // Fondo de la segunda vista
         self.view.backgroundColor = UIColor.systemGray6
         
-        // Mostramos el resultado del IMC en la etiqueta
+        // Mostramos el resultado del IMC
         if let imcValor = imc {
             resultadoLabel.text = String(format: "Tu IMC es %.2f", imcValor)
             
-            // Clasificamos el IMC y mostramos recomendaciones
             var interpretacion = ""
             var colorInterpretacion = UIColor.black
             if imcValor < 18.5 {
@@ -47,13 +43,8 @@ class ViewController2: UIViewController {
                 colorInterpretacion = UIColor.red
             }
             
-            // Mostramos la interpretación en la nueva etiqueta con colores
             interpretacionLabel.text = interpretacion
             interpretacionLabel.textColor = colorInterpretacion
-            
-            // Estilo de la etiqueta de resultado
-            resultadoLabel.font = UIFont.boldSystemFont(ofSize: 24)
-            interpretacionLabel.font = UIFont.systemFont(ofSize: 18)
         }
     }
 
