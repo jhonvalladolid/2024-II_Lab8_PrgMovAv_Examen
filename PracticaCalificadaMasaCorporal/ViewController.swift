@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var txtTitulo: UILabel!
     @IBOutlet weak var txtPeso: UITextField!
     @IBOutlet weak var txtAltura: UITextField!
     @IBOutlet weak var calcularButton: UIButton!
@@ -18,6 +19,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Establecemos el título en el UILabel txtTitulo
+        txtTitulo.text = "Calculo de Indice de Masa Corporal"
+        txtTitulo.font = UIFont.boldSystemFont(ofSize: 26)
+        txtTitulo.textAlignment = .center
+        
         // Estilos del botón "Calcular ICM"
         calcularButton.layer.cornerRadius = 10
         calcularButton.backgroundColor = UIColor.systemBlue

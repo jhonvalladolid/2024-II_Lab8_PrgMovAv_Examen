@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="qph-Y3-RXI">
-                                <rect key="frame" x="86.666666666666686" y="168" width="220" height="34"/>
+                                <rect key="frame" x="86.666666666666686" y="174" width="220" height="34"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peso (kg):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRS-iT-nHr">
                                         <rect key="frame" x="0.0" y="0.0" width="77" height="34"/>
@@ -33,7 +33,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="RKr-gM-1zG">
-                                <rect key="frame" x="83.333333333333329" y="261" width="226.66666666666669" height="34"/>
+                                <rect key="frame" x="83.333333333333329" y="229" width="226.66666666666669" height="34"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Altura (cm):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zx4-Vh-Fpw">
                                         <rect key="frame" x="0.0" y="0.0" width="89.666666666666671" height="34"/>
@@ -48,7 +48,7 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculo de Indice de Masa Corporal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcI-r6-L8b">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcI-r6-L8b">
                                 <rect key="frame" x="20" y="104" width="353" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="cUw-qX-cNY"/>
@@ -73,19 +73,20 @@
                         <constraints>
                             <constraint firstItem="AcI-r6-L8b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="2la-Ej-GV3"/>
                             <constraint firstItem="AcI-r6-L8b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9yw-by-DhX"/>
-                            <constraint firstItem="RKr-gM-1zG" firstAttribute="top" secondItem="AcI-r6-L8b" secondAttribute="bottom" constant="132" id="K5d-5m-lEw"/>
+                            <constraint firstItem="RKr-gM-1zG" firstAttribute="top" secondItem="AcI-r6-L8b" secondAttribute="bottom" constant="100" id="K5d-5m-lEw"/>
                             <constraint firstItem="AcI-r6-L8b" firstAttribute="centerX" secondItem="RKr-gM-1zG" secondAttribute="centerX" id="MdL-Nb-GtQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AcI-r6-L8b" secondAttribute="trailing" constant="20" id="Q0a-Tj-eTV"/>
                             <constraint firstItem="wBe-KD-5Ji" firstAttribute="top" secondItem="AcI-r6-L8b" secondAttribute="bottom" constant="228" id="mXz-4E-R54"/>
                             <constraint firstItem="AcI-r6-L8b" firstAttribute="centerX" secondItem="qph-Y3-RXI" secondAttribute="centerX" id="rXG-3j-V6a"/>
                             <constraint firstItem="AcI-r6-L8b" firstAttribute="centerX" secondItem="wBe-KD-5Ji" secondAttribute="centerX" id="tQI-t8-hKQ"/>
-                            <constraint firstItem="qph-Y3-RXI" firstAttribute="top" secondItem="AcI-r6-L8b" secondAttribute="bottom" constant="39" id="yLQ-0v-KyB"/>
+                            <constraint firstItem="qph-Y3-RXI" firstAttribute="top" secondItem="AcI-r6-L8b" secondAttribute="bottom" constant="45" id="yLQ-0v-KyB"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="calcularButton" destination="wBe-KD-5Ji" id="abU-2u-UNC"/>
                         <outlet property="txtAltura" destination="W7G-i2-N1P" id="wc4-F5-ZtC"/>
                         <outlet property="txtPeso" destination="Gyw-Mg-LPC" id="frp-7i-t8n"/>
+                        <outlet property="txtTitulo" destination="AcI-r6-L8b" id="ZRv-IB-XxA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -147,7 +148,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qmi-YR-gjR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="852.67175572519079" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="923" y="-27"/>
         </scene>
     </scenes>
     <resources>
